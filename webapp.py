@@ -16,7 +16,7 @@ def render_response():
         reply = "You must be a girl!!"
     else:
         reply = "you are a chump"
-    return render_template('response.html', response = reply)
+    return render_template('Page1.html', response = reply)
 
 if __name__=="__main__":
     app.run(debug=False, port=54321)
