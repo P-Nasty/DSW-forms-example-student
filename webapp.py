@@ -8,15 +8,12 @@ def render_main():
 
 @app.route("/response")
 def render_response():
-    color = request.args['color']
+    color = request.args['integer']
     #stores information sent to the server
     #args is a dactionary able to carry multiple values
     #args is visible in the url of the website
-    if color == 'pink':
-        reply = "You must be a girl!!"
-    else:
-        reply = "you are a chump"
-    return render_template('Page1.html', response = reply)
+        reply = "integer * 0.9144"
+    return render_template('page1.html', response = reply)
 
 if __name__=="__main__":
     app.run(debug=False, port=54321)
