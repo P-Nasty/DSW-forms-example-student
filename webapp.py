@@ -12,17 +12,17 @@ def render_response():
     #stores information sent to the server
     #args is a dactionary able to carry multiple values
     #args is visible in the url of the website
-        reply = str(color * 0.9144)
+    reply = str(color * 0.9144)
     return render_template('page1.html', response = reply)
 @app.route("/p2")
 def render_response():
     color = float(request.args['integer2'])
-        reply = str(color * 0.9144)
+    reply = str(color * 0.9144)
     return render_template('page2.html', response = reply)
 @app.route("/p3")
 def render_response():
     color = float(request.args['integer3'])
-        reply = str(color * 0.9144)
+     reply = str(color * 0.9144)
     return render_template('page3.html', response = reply)
 
 if __name__=="__main__":
