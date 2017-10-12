@@ -5,9 +5,9 @@
   </head>
   <body>
   
-     <li {% if active_page == "home1" %} class = "active"{% endif %}><a href=".">Home</a></li>
-     <li {% if active_page == "home2" %} class = "active"{% endif %}><a href="p1">Trig Functions</a></li>
-     <li {% if active_page == "home3" %} class = "active"{% endif %}><a href="p2">Derivative Rules</a></li>
+     <li {% if active_page == "home1" %} class = "active"{% endif %}><a href="h1">home1</a></li>
+     <li {% if active_page == "home2" %} class = "active"{% endif %}><a href="h2">home2</a></li>
+     <li {% if active_page == "home3" %} class = "active"{% endif %}><a href="h3">home3</a></li>
      {% block content %}{% endblock %}
 
   </body>
