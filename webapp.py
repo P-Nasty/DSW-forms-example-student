@@ -22,7 +22,7 @@ def render_response():
 @app.route("/p3")
 def render_response():
     color = float(request.args['integer3'])
-     reply = str(color * 0.9144)
+    reply = str(color * 0.9144)
     return render_template('page3.html', response = reply)
 
 if __name__=="__main__":
