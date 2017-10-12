@@ -8,7 +8,7 @@ def render_main():
 
 @app.route("/response")
 def render_response():
-    color = request.args['integer']
+    color = request.args['integer1']
     #stores information sent to the server
     #args is a dactionary able to carry multiple values
     #args is visible in the url of the website
