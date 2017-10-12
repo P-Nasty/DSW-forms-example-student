@@ -7,7 +7,7 @@ def render_main():
     return render_template('home.html')
 
 @app.route("/p1")
-def render_response():
+def render_response1():
     color = float(request.args['integer1'])
     #stores information sent to the server
     #args is a dactionary able to carry multiple values
@@ -15,12 +15,12 @@ def render_response():
     reply = str(color * 0.9144)
     return render_template('page1.html', response = reply)
 @app.route("/p2")
-def render_response():
+def render_respons2():
     color = float(request.args['integer2'])
     reply = str(color * 0.9144)
     return render_template('page2.html', response = reply)
 @app.route("/p3")
-def render_response():
+def render_respons3():
     color = float(request.args['integer3'])
     reply = str(color * 0.9144)
     return render_template('page3.html', response = reply)
