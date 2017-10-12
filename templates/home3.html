@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Favorite Color</title>
-  </head>
-  <body>
+{% extends "layout_home.html" %}
+{% set active_page = "Intigral Functions" %}
+{% block title %}Integral Functions{% endblock %}
+{% block content %}
 
     <form action='/response'>
       How many miles?<br>
@@ -12,5 +10,4 @@
       <input type="submit">
     </form>
 
-  </body>
-</html>
+{% endblock %}
