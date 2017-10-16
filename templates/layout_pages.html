@@ -4,9 +4,9 @@
     <title>{% block title %}{% endblock %} - My Webpage</title>
   </head>
   <body>
-     <li {% if active_page == "page1" %} class = "active"{% endif %}><a href="h1">page1</a></li>
-     <li {% if active_page == "page2" %} class = "active"{% endif %}><a href="h2">page2</a></li>
-     <li {% if active_page == "page3" %} class = "active"{% endif %}><a href="h3">page3</a></li>
+     <li {% if active_page == "page1" %} class = "active"{% endif %}><a href="h1">yards to meters</a></li>
+     <li {% if active_page == "page2" %} class = "active"{% endif %}><a href="h2">inches to centimeters</a></li>
+     <li {% if active_page == "page3" %} class = "active"{% endif %}><a href="h3">miles to kilometers</a></li>
      {% block content %}{% endblock %}
   </body>
 </html>
