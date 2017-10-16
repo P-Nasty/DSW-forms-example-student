@@ -6,13 +6,13 @@ app = Flask(__name__) #__name__ = "__main__" if this is the file that was run.  
 def render_main():
     return render_template('home.html')
 @app.route("/h1")
-def render_main():
+def render_home1():
     return render_template('home1.html')
 @app.route("/h2")
-def render_main():
+def render_home2():
     return render_template('home2.html')
 @app.route("/h3")
-def render_main():
+def render_home3():
     return render_template('home3.html')
 
 
