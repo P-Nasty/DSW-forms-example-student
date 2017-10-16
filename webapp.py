@@ -26,12 +26,12 @@ def render_response1():
     reply = str(color * 0.9144)
     return render_template('page1.html', response = reply)
 @app.route("/p2")
-def render_respons2():
+def render_response2():
     color = float(request.args['integer2'])
     reply = str(color * 0.9144)
     return render_template('page2.html', response = reply)
 @app.route("/p3")
-def render_respons3():
+def render_response3():
     color = float(request.args['integer3'])
     reply = str(color * 0.9144)
     return render_template('page3.html', response = reply)
