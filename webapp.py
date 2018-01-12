@@ -20,7 +20,7 @@ def login():
 
 
 
-@app.route("/p1")
+@app.route("/p1",methods=['GET','POST'])
 def render_response1():
     color = float(request.args['integer1'])
     #stores information sent to the server
