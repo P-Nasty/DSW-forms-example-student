@@ -21,11 +21,12 @@ def login():
 
 
 @app.route("/p1",methods=['GET','POST'])
-def render_response1():
-    color = float(request.args['integer1'])
-    #stores information sent to the server
-    #args is a dactionary able to carry multiple values
-    #args is visible in the url of the website
+def render_response1(): 
+    if request.method== 'POST'
+       color = float(request.form['integer1'])
+       #stores information sent to the server
+       #args is a dactionary able to carry multiple values
+       #args is visible in the url of the website
     reply = str(color * 0.9144)
     return render_template('page1.html', response = reply)
 @app.route("/p2")
