@@ -14,6 +14,9 @@ def render_home2():
 @app.route("/h3")
 def render_home3():
     return render_template('home3.html')
+def login():
+    if request.method == 'POST':
+    do_the_login()
 
 
 
